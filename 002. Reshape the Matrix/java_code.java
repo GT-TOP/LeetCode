@@ -1,28 +1,12 @@
-import java.util.Scanner;
-
-public class Reshape_the_Matrix {
-	public static int[][] main(String[] args){
-		Scanner sc = new Scanner(System.in);
-		int r = sc.nextInt();
-		int c = sc.nextInt();
-		int[][] nums = new int[r][c];
-		for (int i=0; i<r; i++){
-			for (int j=0; j<c; j++){
-				nums[i][j] = sc.nextInt();
-			}
-		}
-		
-		System.out.println(nums.length);
-		int rn = sc.nextInt();
-		int cn = sc.nextInt();
-		sc.close();
-		int[][] nums_reshape = new int[rn][cn];
+class Solution {
+    public int[][] matrixReshape(int[][] nums, int r, int c) {
 		int r1 = 0;
 		int c1 = 0;
-		if (rn*cn == nums.length*nums[0].length){
+		if (r*c == nums.length*nums[0].length){
+            int[][] nums_reshape = new int[r][c];
 			for (int i=0; i<nums.length; i++)
 				for (int j=0; j<nums[0].length; j++){
-					if (c1 == cn){
+					if (c1 == c){
 						c1 = 0;
 						r1 += 1;
 					}
@@ -32,6 +16,5 @@ public class Reshape_the_Matrix {
 		}
 		else
 			return nums;
-		
-	}
+    }
 }
