@@ -1,5 +1,6 @@
 最大连续1的个数
 =
+标签：array  
 思路没啥说的，学点java语法哈哈 
 
 java中int与Integer的区别
