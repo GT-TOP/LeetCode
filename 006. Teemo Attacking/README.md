@@ -1,4 +1,5 @@
 # 提莫队长正在攻击
+标签：array  
 * 看完题目描述很自然地就有思路：相当于对一个数组‘染色’，从前向后，被攻击则由0改为1，最后遍历一次就能计算出来  
-    可这样做时间复杂度为O(timeSeries*duration)，超时；  
-    AC的方案是O(timeSeries)，即维护两个指针，start和end————思路不错，同时也降低了空间复杂度
+    可这样做时间复杂度为O(timeSeries*duration)，超时  
+    AC的方案是O(timeSeries)，即维护两个指针，start和end————思路不错，同时也降低了空间复杂度
