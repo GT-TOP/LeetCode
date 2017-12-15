@@ -58,6 +58,6 @@ class Solution {
 		    brr[re] = n;
 
 	}	
-		return time_com;
+		return time_com; 
     }
 }
