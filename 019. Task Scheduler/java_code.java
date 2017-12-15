@@ -35,6 +35,7 @@ class Solution {
 		            }
 		        }
 		    }
+			
 		    if (re == -1){
 		    	time_com++;
 				//idle interval 对于所有待执行任务都是一个cooling interval，故所有的等待时间都可以减一
