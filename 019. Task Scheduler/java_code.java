@@ -13,8 +13,8 @@ class Solution {
 		}
 				
 		int num_task = hm.size(); 
-        int[] arr = new int[num_task];
-        int[] brr = new int[num_task];
+        	int[] arr = new int[num_task];
+        	int[] brr = new int[num_task];
 
 		Iterator iter = hm.entrySet().iterator();
 		int t = 0;
